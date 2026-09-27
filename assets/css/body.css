@@ -1,0 +1,80 @@
+body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #001f3f, #003366, #004080);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      border: 2px solid white;
+      border-radius: 15px;
+      padding: 30px;
+      background: rgba(0, 0, 50, 0.6);
+    }
+
+    .intro {
+      background-image: url("assets/img/fundo img lara.png"); /* Fundo com corais e águas-vivas */
+      background-size: 100%;
+      background-position: center;
+      padding: 20% 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    .intro h1 {
+      font-size: 2.8em;
+      margin: 0;
+    }
+
+    .intro h2 {
+      margin: 5px 0;
+      font-weight: normal;
+    }
+
+    .intro p {
+      font-style: italic;
+      font-size: 1.3em;
+    }
+
+    .details, .dresscode, .gifts, .confirmation {
+      margin: 20px 0;
+      padding: 15px;
+      border: 1px solid white;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .section-title {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+      text-decoration: underline;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      border: 2px solid white;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: white;
+      color: #003366;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }

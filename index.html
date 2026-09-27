@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Convite - 15 Anos Anna Lara</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #010e1a, #2076cc, #011222);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      border: 2px solid white;
+      border-radius: 15px;
+      padding: 30px;
+      background: rgba(0, 0, 50, 0.6);
+    }
+
+    .intro {
+      background-image: url("assets/img/fundo\ img\ lara.png"); /* Fundo com corais e águas-vivas */
+      background-size: 100%;
+      background-position: center;
+      padding: 20% 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    .intro h1 {
+      font-size: 2.8em;
+      margin: 0;
+    }
+
+    .intro h2 {
+      margin: 5px 0;
+      font-weight: normal;
+    }
+
+    .intro p {
+      font-style: italic;
+      font: size 28px;;
+    }
+
+    .details, .dresscode, .gifts, .confirmation {
+      margin: 20px 0;
+      padding: 15px;
+      border: 1px solid white;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .section-title {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+      text-decoration: underline;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 25px 25px;
+      border: 5px solid white;
+      border-radius: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: white;
+      color: #003366;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+    p{
+        font-size: 28px;
+    }
+    
+    /* Bolhas animadas */
+    .bubble {
+      border: 2px solid white;
+      position: absolute;
+      bottom: -50px;
+      background: rgba(225, 226, 240, 0.6);
+      border-radius: 50%;
+      animation: rise 10s infinite ease-in;
+    }
+
+    @keyframes rise {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) scale(0.5);
+        opacity: 0;
+      }
+    }
+
+ 
+
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Intro -->
+    <div class="intro">
+      <!-- <h1>ANNA LARA</h1>
+      <h2>Meus 15 Anos</h2>
+      <p>"Você está convidado para uma noite encantada no fundo do mar"</p> -->
+    </div>
+
+    <!-- Detalhes -->
+    <div class="details">
+      <p><strong> Local</strong></p> <p>Espaço Mansão - East Side<br>
+      Av. Dr. Eduardo Cotching, 658 - Jardim Analia Franco, São Paulo - SP, 03356-000</p>
+<a class="button" href="https://www.google.com/maps/search/?api=1&query=Espaço+Mansão+-+East+Side+-+Av.+Dr.+Eduardo+Cotching,+658+-+Jardim+Analia+Franco,+São+Paulo+-+SP,+03356-000" target="_blank"> Ver Localização</a>
+    
+      <p><strong> Data:</strong> 01/11/2026<br></p>
+      <p><strong> Início:</strong> 19:30</p> 
+</div>
+      
+
+    <!-- Dress Code -->
+    <div class="dresscode">
+      <p><strong> Dress Code:</strong> Esporte fino</p>
+      <p> Observação</p>
+      <p> Nesse dia pedimos por favor não usar tons de Azul na festa</p>
+    </div>
+
+    <!-- Sugestão de presentes -->
+    <div class="gifts">
+      <div class="section-title">
+        <p><strong>Sugestão de presente</strong></p> </div>
+      <p>
+        - Roupas – tamanho P<br>
+        - Calçados – tamanho 36<br>
+        - Joias douradas ou prateadas<br>
+        - Maquiagem<br>
+        - Produtos de cabelo<br>
+        - Chave Pix: <strong>genilda.santana17@hotmail.com</strong>
+      </p>
+    </div>
+
+    <!-- Confirmação -->
+    <div class="confirmation">
+      <p><strong> Confirmar presença até dia 10 de outubro.</strong></p>
+      <a class="button" href="https://w.app/eywhf5" target="_blank"> Confirmo minha presença</a>
+      <a class="button" href="https://w.app/botolu" target="_blank"> Não poderei comparecer</a>
+    </div>
+
+    <div class="footer">
+      <p> Uma noite mágica espera por você </p>
+    </div>
+  </div>
+
+  <script>
+    // Interação simples com JavaScript
+    document.querySelectorAll('.button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        console.log(`Botão clicado: ${btn.textContent}`);
+      });
+    });
+
+    // Criação dinâmica das bolhas
+    const numBolhas = 25;
+    for (let i = 0; i < numBolhas; i++) {
+      const bubble = document.createElement('div');
+      bubble.classList.add('bubble');
+      bubble.style.width = `${Math.random() * 25 + 10}px`;
+      bubble.style.height = bubble.style.width;
+      bubble.style.left = `${Math.random() * 100}%`;
+      bubble.style.animationDuration = `${Math.random() * 5 + 5}s`;
+      bubble.style.animationDelay = `${Math.random() * 3}s`;
+      document.body.appendChild(bubble);
+      }
+  </script>
+</body>
+</html>
